@@ -11,6 +11,7 @@ public class Main  {
     static void solve() {
    	 StringBuilder st = new StringBuilder();
    	 print("hello");
+   	 map.clear();
     }
     
  
