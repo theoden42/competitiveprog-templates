@@ -1,6 +1,5 @@
 
 import java.util.*;
-import java.io.*;
 public class Main  {
     static FastReader in =  new FastReader();
     static final Random random=new Random();
@@ -8,10 +7,11 @@ public class Main  {
     static HashMap<String,Integer>map=new HashMap<>();
     
     
-    static void solve() {
+    static String solve() {
    	 StringBuilder st = new StringBuilder();
-   	 print("hello");
+   	 String S = "";
    	 map.clear();
+   	 return S;
     }
     
  
@@ -22,8 +22,10 @@ public class Main  {
         loop:
         while(t-->0)
         {
-        	solve();
+        	String S = solve();
+        	res.append(S + "\n");
         }
+        print(res);
  
     }
  
@@ -60,10 +62,28 @@ public class Main  {
         }
         return gcd(b,a%b);
     }
+    
+    static int arraygcd(int[] ar) {
+    	int n = ar.length;
+    	int result = ar[0];
+    	for(int i = 1; i<n; i++) {
+    		result = gcd(ar[i], result);
+    	}
+    	return result;
+    }
  
     static int lcm(int a, int b)
     {
         return (a / gcd(a, b)) * b;
+    }
+    
+    static int arraylcm(int[] ar) {
+    	int result = ar[0];
+    	int n  = ar.length;
+    	for(int i = 1; i<n; i++) {
+    		result = lcm(result, ar[i]);
+    	}
+    	return result;
     }
  
  
