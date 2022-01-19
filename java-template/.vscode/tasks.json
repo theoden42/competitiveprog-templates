@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "runjavatest",
+			"type": "shell",
+			"command": "javac ${fileBasename} && java ${fileBasenameNoExtension} <input.txt>output.txt && rm *.class ;",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
