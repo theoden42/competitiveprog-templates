@@ -11,28 +11,21 @@ public class Main  {
     
     /******************************** Main code is here ********************************/
     
-    static String solve() {
-   	 String S = "";
+    static void solve() {
      
 
    	 map.clear();
-   	 return S;
     }
 
     /******************************** Main code is here ********************************/
  
     public static void main(String args[]) throws IOException {
-        int t=in.nextInt();
-        StringBuilder res=new StringBuilder();
-    
+        int t = 1;
+        t = in.nextInt();
         while(t-->0)
         {
-        	String S = solve();
-        	res.append(S + "\n");
+            solve();
         }
-        
-        print(res);
- 
     }
  
 
