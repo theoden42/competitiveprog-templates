@@ -4,7 +4,7 @@
 
 ## C++ Template
 
-This directory includes teh following files: 
+This directory includes the following files: 
 
 - Template File: template.cpp, this is the main template
 
