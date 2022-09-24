@@ -1,0 +1,43 @@
+<snippet>
+    <content><![CDATA[
+
+/* @uthor: (g)theoden42 */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#ifdef ON_PC
+    #include <debug.h>
+#else
+    #define debug(x...)
+#endif
+
+#define ll long long
+#define ld long double
+#define all(a) (a).begin(), (a).end()
+
+const int MAX_N = 1e6 + 5;
+const ll MOD = 1e9 + 7;
+const ll INF = 1e9;
+
+void solve() {
+    $0
+}
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    int tc = 1;
+    $1cin >> tc;
+    for (int t = 1; t <= tc; t++) {
+        // cout << "Case #" << t << ": ";
+        solve();
+    }
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+     <tabTrigger>cptemplate</tabTrigger> -->
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+     <scope>source.c++ </scope> -->
+</snippet>
+
