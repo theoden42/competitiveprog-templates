@@ -1,0 +1,6 @@
+{
+  "cmd" : ["g++ -DON_PC $file_name -std=c++17 -o $file_base_name && gtimeout 5s ./$file_base_name<inputf.in>outputf.in"], 
+  "selector" : "source.c",
+  "shell": true,
+  "working_dir" : "$file_path"
+}
