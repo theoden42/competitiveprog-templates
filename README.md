@@ -11,6 +11,7 @@ This directory includes the following files:
 - Sublime Snippets: This folder contains sublime snippets of code/algorithms I use often: 
 	- Binary Exponentiation
 	- Modular Inverse
+	- Sieve of Eratosthenes
 
 - Sublime Build: Contains the build file I use to compile my code. Note: inputf.in and outputf.in should be present in the folder where source code is located. 
 
