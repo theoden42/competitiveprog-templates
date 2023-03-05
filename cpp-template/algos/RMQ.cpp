@@ -41,7 +41,7 @@ struct RMQ {
 			range_min[k].resize(n - (1 << k) + 1);
 		if (n > 0)
 			range_min[0] = values;
-		
+
 		for (int k = 1; k < levels; k++)
 			for (int i = 0; i <= n - (1 << k); i++)
 				range_min[k][i] = better(range_min[k - 1][i], range_min[k - 1][i + (1 << (k - 1))]);
@@ -59,8 +59,6 @@ struct RMQ {
 		return better(range_min[lg][from], range_min[lg][to - (1 << lg) + 1]);
 	}
 };
-
-
 
 
 void solve() {

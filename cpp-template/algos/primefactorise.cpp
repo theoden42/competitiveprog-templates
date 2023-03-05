@@ -4,7 +4,7 @@ using namespace std;
 #define ll long long
 
 const int MAX_N = 1e5;
-vector<bool> is_prime(MAX_N + 1, false);;
+vector<bool> is_prime(MAX_N + 1, true);;
 vector<int> spf(MAX_N + 1);
 
 void sieve(){
@@ -17,7 +17,6 @@ void sieve(){
     }
 
     for (ll i = 2; i * i <= MAX_N; i++) {
-        spf[i] = i;
         if (is_prime[i]) {
             for (ll j = i * i; j <= MAX_N; j += i){
                 is_prime[j] = false;
