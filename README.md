@@ -12,7 +12,9 @@ This directory includes the following files:
 	- Binary Exponentiation
 	- Modular Inverse
 	- Sieve of Eratosthenes
+	- Standard Segment
 
+Deprecated:
 - Sublime Build: Contains the build file I use to compile my code. Note: inputf.in and outputf.in should be present in the folder where source code is located. 
 
 ## Java Template

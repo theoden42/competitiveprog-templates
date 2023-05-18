@@ -4,6 +4,7 @@
 
 * Sieve of Eratosthenes
 * Smallest Prime factor + factorise in log n using Sieve
+* Segment Tree
 
 ### Header files: 
 
