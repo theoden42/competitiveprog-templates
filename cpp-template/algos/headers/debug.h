@@ -2,7 +2,6 @@
  gcc -E -Wp,-v -     
  to get the include path used by the compiler in use */
 
-
 #include<iostream>
 using namespace std;
 void __print(int x) {cerr << x;}

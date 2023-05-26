@@ -6,16 +6,16 @@
 
 This directory includes the following files: 
 
-- Template File: template.cpp, this is the main template
+- Template File: template.cpp, this is the main template. 
 
 - Sublime Snippets: This folder contains sublime snippets of code/algorithms I use often: 
 	- Binary Exponentiation
 	- Modular Inverse
 	- Sieve of Eratosthenes
-	- Standard Segment
+	- Standard Segment Tree
 
 Deprecated:
-- Sublime Build: Contains the build file I use to compile my code. Note: inputf.in and outputf.in should be present in the folder where source code is located. 
+- (Use Fast Olympic Coding instead) Sublime Build: Contains the build file I use to compile my code. Note: inputf.in and outputf.in should be present in the folder where source code is located. 
 
 ## Java Template
 
