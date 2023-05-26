@@ -2,8 +2,9 @@
 using namespace std;
 
 #define ll long long
-
 const int MAX_N = 1e5;
+
+
 vector<bool> is_prime(MAX_N + 1, true);;
 vector<int> spf(MAX_N + 1);
 
@@ -27,7 +28,6 @@ void sieve(){
         }
     }
 }
-
 
 vector<int> factorise(int n){
     vector<int> factors;

@@ -3,20 +3,22 @@
 struct SegTree {
 	struct node {
         //change code here
+        ${1}
 	};
 
     //neutral element here
-	${1}
-    node iden = {};
+    node iden = {}; ${2}
 	// fix these two functions
 	node combine(node& a, node& b){
  		node t;
         // how to combine two nodes
+        ${3}
  		return t;
  	}
  	node single_value(int v){
  		node t;
         // what to store in leaves corresponding to array value v
+        ${4}
  		return t;
  	}
     
@@ -65,6 +67,7 @@ struct SegTree {
 		getUtil(l, r, 2 * x + 1, lx, m);
 		getUtil(l, r, 2 * x + 2, m, rx);
 		return combine(arr[2 * x + 1], arr[2 * x + 2]);
+		${0}
 	}
 
 	void setUtil(int ind, int val, int x, int lx, int rx){

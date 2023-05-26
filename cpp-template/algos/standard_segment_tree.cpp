@@ -6,8 +6,8 @@ struct SegTree {
 	struct node {
         //change code here
 	};
-
-    //neutral element here
+	
+	//neutral element here
     node iden = {};
 	// fix these two functions
 	node combine(node& a, node& b){
