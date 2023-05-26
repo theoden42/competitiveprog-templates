@@ -1,11 +1,12 @@
 /* author: (g)theoden42 */
 #include <bits/stdc++.h>
+using namespace std;
 
 struct SegTree {
 	struct node {
         //change code here
 	};
-
+	
     //neutral element here
     node iden = {};
 	// fix these two functions
@@ -62,6 +63,8 @@ struct SegTree {
 			return iden;
 		}
 		int m = (lx + rx) / 2;
+		getUtil(l, r, 2 * x + 1, lx, m);
+		getUtil(l, r, 2 * x + 2, m, rx);
 		return combine(arr[2 * x + 1], arr[2 * x + 2]);
 	}
 
