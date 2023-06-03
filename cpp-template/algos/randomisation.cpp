@@ -7,6 +7,7 @@ using namespace std;
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 vector<int> random_permutation(int n){
+    // remember that a random permutation the  probability of having fixed points is 1 / e
     vector<int> temp(n);
     for(int i = 1; i <= n; i++){
         temp[i - 1] = i;
