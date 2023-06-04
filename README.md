@@ -1,32 +1,31 @@
 # Competitive Programming Templates
-### Templates and other files for Competitive Programming in Java and C++
+
+#### Templates and other files for Competitive Programming in Java and C++
 ---
 
-## C++ Template
+## Structure: 
 
-This directory includes the following files: 
+#### Algorithms
+Contains my tested/not-much-tested implementations of some of standard algorithms.
+Right Now, this has the following implementations : 
 
-- Template File: template.cpp, this is the main template. 
-
-- Sublime Snippets: This folder contains sublime snippets of code/algorithms I use often: 
 	- Binary Exponentiation
 	- Modular Inverse
 	- Sieve of Eratosthenes
 	- Standard Segment Tree 
 	- Prime factorisation in log n
 	- Smallest Prime factor of a number using sieve
-	- Disjoin Set Union
+	- Disjoin Set Union	
 
-Deprecated:
-- (Use Fast Olympic Coding instead) Sublime Build: Contains the build file I use to compile my code. Note: inputf.in and outputf.in should be present in the folder where source code is located. 
+### Headers 
+Contains right now, the headers for reference that I use often: 
+	
+	- bits/stdc++.h - for use with clang
+	- debug.h - standard debugging template
 
-## Java Template
+### Snippets
+Contains the snippets of the algorithms above in code editors I use. 
 
-This directory includes the following files: 
-
-- VS Code task.json configured to build Main.java(code is written here)
-
-- Competitive Programming template is stored in template.txt, simply copy and use in Main.java.
-
-- Helper files: input.txt stores input and output.txt pushes output of any test case
+### Scripts 
+Some build/test scripts that I sometimes refernce. 
 
