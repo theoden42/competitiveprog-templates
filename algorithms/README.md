@@ -6,6 +6,3 @@
 * Smallest Prime factor + factorise in log n using Sieve
 * Segment Tree without Lazy 
 
-### Header files: 
-
-* debug.h header file for printing on std::cerr during debuging.

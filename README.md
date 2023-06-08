@@ -16,6 +16,7 @@ Right Now, this has the following implementations :
 	- Prime factorisation in log n
 	- Smallest Prime factor of a number using sieve
 	- Disjoin Set Union	
+	- ncr and factorial
 
 ### Headers 
 Contains right now, the headers for reference that I use often: 
