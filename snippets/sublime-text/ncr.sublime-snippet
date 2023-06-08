@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+vector<int> factorial(MAX_N + 1, 1);
+
+void pre(){
+	for(int i = 1; i <= MAX_N; i++){
+		factorial[i] = (i * factorial[i - 1]) % MOD;
+	}
+}
+
+int ncr(int n, int r){
+	int x = factorial[n];
+	x *= modinverse(factorial[n - r]);
+	x %= MOD;
+	x *= modinverse(factorial[r]);
+	x %= MOD;
+	return x;
+}
+
+]]></content>
+	<tabTrigger>ncr</tabTrigger>
+	<scope>source.c++</scope> 
+</snippet>
