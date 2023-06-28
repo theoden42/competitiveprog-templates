@@ -2,27 +2,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+template<typename T>
 struct SegTree {
-	struct node {
-        //change code here
-	};
-	
-	//neutral element here
-    node iden = {};
-	// fix these two functions
-	node combine(node& a, node& b){
- 		node t;
+
+	int sz = 1;
+	vector<T> arr;
+    T iden; // define the identity element here
+   
+	T combine(T a, T b){
+ 	    T temp;	
         // how to combine two nodes
- 		return t;
+ 		return temp ;
  	}
- 	node single_value(int v){
- 		node t;
+ 	T single_value(int v){
+    	T temp;
         // what to store in leaves corresponding to array value v
- 		return t;
+ 		return temp;
  	}
     
-	int sz = 1;
-	vector<node> arr;
 	void init(int n){
 		while(sz < n){
 			sz *= 2;
@@ -38,7 +35,7 @@ struct SegTree {
 		setUtil(ind, value, 0, 0, sz);
 	}
 
-	node get(int l, int r){
+	T get(int l, int r){
 		return getUtil(l, r, 0, 0, sz);
 	}
 
@@ -55,7 +52,7 @@ struct SegTree {
 		arr[x] = combine(arr[2 * x + 1], arr[2 * x + 2]);
 	}
 
-	node getUtil(int l, int r, int x, int lx, int rx){
+	T getUtil(int l, int r, int x, int lx, int rx){
 		if(lx >= l && rx <= r){
 			return arr[x];
 		}
@@ -63,9 +60,9 @@ struct SegTree {
 			return iden;
 		}
 		int m = (lx + rx) / 2;
-		getUtil(l, r, 2 * x + 1, lx, m);
-		getUtil(l, r, 2 * x + 2, m, rx);
-		return combine(arr[2 * x + 1], arr[2 * x + 2]);
+        T left = getUtil(l, r, 2 * x + 1, lx, m);
+		T right = getUtil(l, r, 2 * x + 2, m, rx);
+		return combine(left, right);
 	}
 
 	void setUtil(int ind, int val, int x, int lx, int rx){
