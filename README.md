@@ -17,6 +17,7 @@ Right Now, this has the following implementations :
 	- Smallest Prime factor of a number using sieve
 	- Disjoin Set Union	
 	- ncr and factorial
+    - Binary Lifing and usage - LCA and Kth ancesstor in log(n)
 
 ### Headers 
 Contains right now, the headers for reference that I use often: 
