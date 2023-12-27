@@ -13,6 +13,7 @@ Right Now, this has the following implementations :
 	- Modular Inverse
 	- Sieve of Eratosthenes
 	- Standard Segment Tree 
+    - Segment Tree with Lazy Propogation
 	- Prime factorisation in log n
 	- Smallest Prime factor of a number using sieve
 	- Disjoin Set Union	
