@@ -7,7 +7,7 @@ struct SegTree {
 
 	int sz = 1;
 	vector<T> arr;
-    T iden; // define the identity element here
+    T iden; // define the identity element herw
    
 	T combine(T a, T b){
  	    T temp;	
