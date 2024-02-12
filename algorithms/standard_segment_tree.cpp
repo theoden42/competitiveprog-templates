@@ -14,7 +14,7 @@ struct SegTree {
         // how to combine two nodes
  		return temp ;
  	}
- 	T single_value(int v){
+ 	T single_value(T v){
     	T temp;
         // what to store in leaves corresponding to array value v
  		return temp;
@@ -27,11 +27,11 @@ struct SegTree {
 		arr.resize(2 * sz, iden);
 	}
 
-	void build(vector<int>& a){
+	void build(vector<T>& a){
 		build(a, 0, 0, sz);
 	}
 
-	void set(int ind, int value){
+	void set(int ind, T value){
 		setUtil(ind, value, 0, 0, sz);
 	}
 
@@ -39,7 +39,7 @@ struct SegTree {
 		return getUtil(l, r, 0, 0, sz);
 	}
 
-	void build(vector<int>& a, int x, int lx, int rx){
+	void build(vector<T>& a, int x, int lx, int rx){
 		if(rx - lx == 1){
 			if(lx < a.size()){
 				arr[x] = single_value(a[lx]);
@@ -65,7 +65,7 @@ struct SegTree {
 		return combine(left, right);
 	}
 
-	void setUtil(int ind, int val, int x, int lx, int rx){
+	void setUtil(int ind, T val, int x, int lx, int rx){
 		if(rx - lx == 1){
 			arr[x] = single_value(val);
 			return;
